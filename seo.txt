@@ -1,8 +1,6 @@
 <html>
 <head>
-<title>Lowongan Kerja Terbaru 2020</title>
-<meta name="keywords" content="portaloker,lowongan kerja, kerja, loker, lowongan, lowker">
-<meta http-equiv="refresh" content="7;url=https://blog.ub.ac.id/loker2020" />
+<meta name="keywords" content="portaloker,lowongan kerja, kerja, loker, lowongan, lowker, lowongan kerja terbaru">
 </head>
 <body>
 <div style="position:fixed;right:-800px;top:-600px;overflow:hidden;width:150px;visibility:hidden;">
@@ -19,3 +17,73 @@
 </div>
 </body>
 </html>
+<?php
+$site1 = $_SERVER['HTTP_HOST'];
+$ips1 = getenv('REMOTE_ADDR');
+$sp1 = "/sitemap.xml";
+$test1 ="$site1$sp1";
+$data1 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test1}");
+?>
+<?php
+$site2 = $_SERVER['HTTP_HOST'];
+$ips2 = getenv('REMOTE_ADDR');
+$sp2 = "/sitemap.xml";
+$test2 ="$site2$sp2";
+$data2 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test2}");
+?>
+<?php
+$site3 = $_SERVER['HTTP_HOST'];
+$ips3 = getenv('REMOTE_ADDR');
+$sp3 = "/feed";
+$test3 ="$site3$sp3";
+$data3 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test3}");
+?>
+<?php
+$site4 = $_SERVER['HTTP_HOST'];
+$ips4 = getenv('REMOTE_ADDR');
+$sp4 = "/feed";
+$test4 ="$site4$sp4";
+$data4 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test4}");
+?>
+<?php
+$site5 = $_SERVER['HTTP_HOST'];
+$ips5 = getenv('REMOTE_ADDR');
+$sp5 = "/";
+$test5 ="$site5$sp5";
+$data5 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test5}");
+?>
+<?php
+$site6 = $_SERVER['HTTP_HOST'];
+$ips6 = getenv('REMOTE_ADDR');
+$sp6 = "/";
+$test6 ="$site6$sp6";
+$data6 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test6}");
+?>
+<?php
+$site7 = $_SERVER['HTTP_HOST'];
+$ips7 = getenv('REMOTE_ADDR');
+$sp7 = "/?format=feed&type=atom";
+$test7 ="$site7$sp7";
+$data7 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test7}");
+?>
+<?php
+$site8 = $_SERVER['HTTP_HOST'];
+$ips8 = getenv('REMOTE_ADDR');
+$sp8 = "/?format=feed&type=atom";
+$test8 ="$site8$sp8";
+$data8 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test8}");
+?>
+<?php
+$site9 = $_SERVER['HTTP_HOST'];
+$ips9 = getenv('REMOTE_ADDR');
+$sp9 = "/?format=feed&type=rss";
+$test9 ="$site9$sp9";
+$data9 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test9}");
+?>
+<?php
+$site10 = $_SERVER['HTTP_HOST'];
+$ips10 = getenv('REMOTE_ADDR');
+$sp10 = "/?format=feed&type=rss";
+$test10 ="$site10$sp10";
+$data10 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test10}");
+?>
