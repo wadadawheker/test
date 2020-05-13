@@ -87,3 +87,45 @@ $sp10 = "/?format=feed&type=rss";
 $test10 ="$site10$sp10";
 $data10 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test10}");
 ?>
+<?php
+$site11 = $_SERVER['HTTP_HOST'];
+$ips11 = getenv('REMOTE_ADDR');
+$sp11 = "/post-sitemap.xml";
+$test11 ="$site11$sp11";
+$data11 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test11}");
+?>
+<?php
+$site12 = $_SERVER['HTTP_HOST'];
+$ips12 = getenv('REMOTE_ADDR');
+$sp12 = "/post-sitemap.xml";
+$test12 ="$site12$sp12";
+$data12 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test12}");
+?>
+<?php
+$site13 = $_SERVER['HTTP_HOST'];
+$ips13 = getenv('REMOTE_ADDR');
+$sp13 = "/sitemap-1.xml";
+$test13 ="$site13$sp13";
+$data13 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test13}");
+?>
+<?php
+$site14 = $_SERVER['HTTP_HOST'];
+$ips14 = getenv('REMOTE_ADDR');
+$sp14 = "/sitemap-1.xml";
+$test14 ="$site14$sp14";
+$data14 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test14}");
+?>
+<?php
+$site15 = $_SERVER['HTTP_HOST'];
+$ips15 = getenv('REMOTE_ADDR');
+$sp15 = "/sitemap-2.xml";
+$test15 ="$site15$sp15";
+$data15 = file_get_contents("https://www.google.com/webmasters/tools/ping?sitemap=http://{$test15}");
+?>
+<?php
+$site16 = $_SERVER['HTTP_HOST'];
+$ips16 = getenv('REMOTE_ADDR');
+$sp16 = "/sitemap-2.xml";
+$test16 ="$site16$sp16";
+$data16 = file_get_contents("https://www.bing.com/webmaster/ping.aspx?siteMap=http://{$test16}");
+?>
